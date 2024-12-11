@@ -19,7 +19,7 @@ class LoginPage extends StatelessWidget {
                   Text(
                     'Welcome to Line Vibrations App ✏️',
                     style: TextStyle(
-                        fontSize: 52,
+                        fontSize: 50,
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(255, 45, 45, 45)),
                   ),
@@ -51,6 +51,10 @@ class LoginButton extends StatelessWidget {
         decoration: BoxDecoration(
           color: const Color(0xFF1A73E8),
           borderRadius: BorderRadius.circular(10),
+          border: Border.all(
+            width: 8,
+            color: const Color.fromARGB(255, 45, 45, 45),
+          ),
         ),
         child: const Center(
           child: Text(
