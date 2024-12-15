@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:line_vibrations/services/auth_service.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -16,13 +17,7 @@ class LoginPage extends StatelessWidget {
               child: const Column(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    'Welcome to Line Vibrations App ✏️',
-                    style: TextStyle(
-                        fontSize: 50,
-                        fontWeight: FontWeight.bold,
-                        color: Color.fromARGB(255, 45, 45, 45)),
-                  ),
+                  LoginTitle(),
                   LoginButton(),
                 ],
               ),
@@ -30,6 +25,23 @@ class LoginPage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+class LoginTitle extends StatelessWidget {
+  const LoginTitle({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Text(
+      'Welcome to Line Vibrations App ✏️',
+      style: TextStyle(
+          fontSize: 50,
+          fontWeight: FontWeight.bold,
+          color: Color.fromARGB(255, 45, 45, 45)),
     );
   }
 }
@@ -42,9 +54,7 @@ class LoginButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: () {
-        print('Login button pressed');
-      },
+      onTap: () => AuthService().signInWithGoogle(),
       child: Ink(
         width: double.infinity,
         height: 150,

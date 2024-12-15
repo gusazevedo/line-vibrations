@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1070246758071",
+    "project_id": "line-vibrations-app",
+    "storage_bucket": "line-vibrations-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1070246758071:android:af4a668eedf4078f15ef32",
+        "android_client_info": {
+          "package_name": "com.line.vibrations.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAh7rWaz58l5DWDX2rqBHlc9c5pIi5EaiM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

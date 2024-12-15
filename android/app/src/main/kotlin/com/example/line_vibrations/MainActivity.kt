@@ -1,4 +1,4 @@
-package com.example.line_vibrations
+package com.line.vibrations.app
 
 import io.flutter.embedding.android.FlutterActivity
 
